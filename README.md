@@ -1,7 +1,7 @@
 # Ruby_bulding_blocks
 Project from Basic Ruby from TOP
 
-Project 1: Ceasar Cipher
+Project 1: Caesar Cipher
 
 Project 2: Stock Picker
 
