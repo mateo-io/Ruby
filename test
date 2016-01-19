@@ -1,0 +1,32 @@
+module Enumerable
+	def my_map2 
+		
+	  	value_holder=[]
+	  	self.each{|val| value_holder<< yield(val)}
+	    value_holder
+	end
+
+	def my_map(proc = nil)
+		result = []
+		if proc && block_given?
+			self.each { |element| result << proc.call(yield(element)) }
+		elsif proc && !block_given?
+			self.each { |element| result << proc.call(element) }
+		elsif proc.nil? && block_given?
+			self.each { |element| result << yield(element) }
+	  else
+	  	self
+		end
+		result
+	end
+
+
+end
+a=Proc.new do |i|
+	2*i
+end
+
+
+print [1,2,3].my_map2 {|i| i*4}
+
+
