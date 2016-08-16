@@ -1,5 +1,6 @@
-# Ruby_bulding_blocks
-Project from Basic Ruby from TOP
+# Ruby Bulding Blocks
+Project from Basic Ruby from The Odin Project Ruby Tutorial
+
 
 Project 1: Caesar Cipher
 
